@@ -267,7 +267,7 @@ export declare class DynamicSearchComponent implements OnInit, OnDestroy, AfterV
     showIcon(data: any): boolean;
     splitingData(data: any, splitter?: string): string;
     getTitleClass(title: any): any;
-    changeStatusColor(value: any): "" | "pending" | "open" | "closed" | "completed" | "draft" | "pending-approval" | "approved" | "returned";
+    changeStatusColor(value: any): "" | "completed" | "draft" | "open" | "closed" | "pending" | "pending-approval" | "approved" | "returned";
     titleCaseToolTip(value: any): any;
     closeForm(): void;
     downloadFileInternally(s3BucketUrlName: any, filename: any): void;
