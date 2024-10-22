@@ -1,4 +1,4 @@
-export { p as CardiDynamicModule, o as DynamicComponent, b as DynamicPageComponent, j as DynamicSearchComponent, i as DynamicSearchModule, n as DynamicService, l as DynamicTabPageService, m as DynamicsearchService, k as DynmicTabPageModule } from './pics-core-dynamic-pics-core-dynamic-a4588d09.mjs';
+export { p as CardiDynamicModule, o as DynamicComponent, k as DynamicPageComponent, i as DynamicSearchComponent, h as DynamicSearchModule, n as DynamicService, l as DynamicTabPageService, m as DynamicsearchService, j as DynmicTabPageModule } from './pics-core-dynamic-pics-core-dynamic-8f313ac9.mjs';
 import '@angular/core';
 import 'rxjs';
 import '@angular/router';
@@ -21,8 +21,6 @@ import 'rxjs/add/operator/map';
 import 'ngxf-uploader';
 import 'rxjs/internal/observable/throwError';
 import '@ngrx/router-store';
-import 'lodash';
-import '@ng-bootstrap/ng-bootstrap';
 import '@angular/material/button';
 import '@angular/material/icon';
 import '@angular/material/input';
@@ -85,5 +83,7 @@ import 'primeng/autocomplete';
 import '@angular/cdk/stepper';
 import '@angular/elements';
 import 'formiojs';
+import 'lodash';
+import '@ng-bootstrap/ng-bootstrap';
 import 'angular-gridster2';
 //# sourceMappingURL=pics-core-dynamic.mjs.map
