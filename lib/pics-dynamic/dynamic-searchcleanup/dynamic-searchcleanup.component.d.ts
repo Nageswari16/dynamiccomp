@@ -240,9 +240,7 @@ export declare class DynamicSearchCleanupComponent implements OnInit, OnDestroy,
     actionRouterConfig(data: any, item: any, navigateState: any): void;
     popupTypeCheck(item: any, data: any): void;
     actionPrintCheck(data: any): void;
-    actionEmailCheck(data: any): void;
     actionDownloadCheck(item: any, data: any): void;
-    actionSurveyCheck(data: any): void;
     getOutsideGridAction(item: any): void;
     dynamicRouteCheck(data: any, item: any, navigateState: any): void;
     setRouteData(data: any, _link: any, navigateState: any): any;
@@ -253,13 +251,11 @@ export declare class DynamicSearchCleanupComponent implements OnInit, OnDestroy,
     getPrimaryColumnId(primaryColumn: any, data: any): any;
     getAsJSON(json: any): any;
     deleteConfirmation(data: any, item: any): void;
-    actionInfoCheck(data: any, item: any): void;
     deleteRecord(): void;
     deleteRecordWithReason(): void;
     deleteRecordWithoutReason(): void;
     cancelPopup(): void;
     reloadPopup(): void;
-    checkIsDisabled(text: string): void;
     completeConfirmation(data: any, _item: any): void;
     closePopup(): void;
     popup(data: any, action: any): void;
@@ -280,8 +276,6 @@ export declare class DynamicSearchCleanupComponent implements OnInit, OnDestroy,
     getSortOrder(defaultSortColumn: any, defaultSortType: any, columnDef: any): any;
     goBack(): void;
     showGridActions(updateGrid: any, showActionColumn: any, gridType: any): any;
-    changeFilterOptions(e: any): void;
-    setPermissions(modal: any): void;
     onResize(): void;
     checkOnresize(mobileColumns: any): void;
     setSelectedGridForm(code: any, value: any): void;
@@ -314,12 +308,9 @@ export declare class DynamicSearchCleanupComponent implements OnInit, OnDestroy,
     buildDynamicSearch(res: any): UntypedFormGroup;
     removeDynamicSearch(index: number): void;
     resetDynamicSearch(): void;
-    getColumnList(index: number, tableValue: string): void;
     getConditionList(index: number, columnValue: string): void;
     resetDynamicSearchValue(index: number): void;
-    trimSpaces(element: any): void;
     submitDynamicSearch(): void;
-    saveDynamicSearch(): void;
     getCriteriaByPageId(): Promise<unknown>;
     removeAllDynamicSearchCondtion(): void;
     checkRulesBeforeActions(data: any, item: any): Observable<boolean>;
