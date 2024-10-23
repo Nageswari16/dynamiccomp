@@ -157,7 +157,6 @@ export declare class DynamicPageCleanupComponent implements OnInit, OnDestroy, A
     getActionSelect(result: any, action: any): void;
     getMultipleFrom(result: any): void;
     private processMultiSelectDropdowns;
-    nextSubmit(event: any): void;
     onClickConfirmation(userAction: any, actionKey: any): void;
     closeValidationPopup(): void;
     validateForm(): void;
@@ -168,7 +167,6 @@ export declare class DynamicPageCleanupComponent implements OnInit, OnDestroy, A
     submitToSurvey(): void;
     updateForm(requestData: any): void;
     closePopup(): void;
-    goBack(): void;
     openBottomSheet(): void;
     modifyVideoContent(): void;
     customClickEvents(_data: any, event: any): void;
@@ -191,9 +189,7 @@ export declare class DynamicPageCleanupComponent implements OnInit, OnDestroy, A
     processOCRResponse(result: any): void;
     prepareFormKeyLabel(json: any): void;
     financeCustomEventsFunctionality(event: any): void;
-    routeToGrid(val: any): void;
     customEvent(event: any): void;
-    ocrUpload(files: any): void;
     condionCheckErrorAlert(error: any): void;
     getUpload(obj: any): void;
     verifiData(ocrDocumentDetails: any): void;
