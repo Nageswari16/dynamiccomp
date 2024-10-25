@@ -271,7 +271,7 @@ export declare class DynamicSearchComponent implements OnInit, OnDestroy, AfterV
     titleCaseToolTip(value: any): any;
     closeForm(): void;
     downloadFileInternally(s3BucketUrlName: any, filename: any): void;
-    getGridSelection(item: any): "none" | "multiple";
+    getGridSelection(item: any): "multiple" | "none";
     startScheduling(id: any, url?: any): void;
     customSave: (state: any) => void;
     columnChooserClick(): void;
