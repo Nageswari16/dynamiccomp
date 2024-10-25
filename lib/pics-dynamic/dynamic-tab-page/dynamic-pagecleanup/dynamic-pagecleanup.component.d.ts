@@ -28,7 +28,6 @@ export declare class DynamicPageCleanupComponent implements OnInit, OnDestroy, A
     private _formIO;
     private store;
     private _storeservice;
-    private submitSuccess;
     private submitFailed;
     formId: any;
     tabId: any;
@@ -37,12 +36,6 @@ export declare class DynamicPageCleanupComponent implements OnInit, OnDestroy, A
     editId: any;
     id: any;
     submittedData: any;
-    afterEntityName: string;
-    afterRuleAppName: string;
-    beforeEntityName: string;
-    beforeRuleAppName: string;
-    beforerulemethod: string;
-    afterrulemethod: string;
     user: any;
     multiSelectDropDowns: Array<string>;
     pageId: any;
@@ -88,21 +81,11 @@ export declare class DynamicPageCleanupComponent implements OnInit, OnDestroy, A
     dynamicSearchService: DynamicsearchService;
     authService: AuthService;
     attachmentInfo: any;
-    uploadedFiles: any;
     parentGridPage: string;
     parentGridPageId: any;
     alertService: AlertService;
-    uploadedFile: any;
-    isOcrForm: boolean;
-    documentType: string;
-    imgUrl: string;
     showOcrForm: boolean;
     attachmentService: AttachmentsService;
-    imageData: {
-        contentType: any;
-        fileName: string;
-    };
-    tableschemaconfig: any;
     formResponse: any;
     action: string;
     contentArray: any[];
@@ -174,7 +157,6 @@ export declare class DynamicPageCleanupComponent implements OnInit, OnDestroy, A
     customEventsButton(event: any): void;
     downloadReport(data: any): void;
     downloadFile(s3BucketUrlName: any): void;
-    customEvents(evt: any): void;
     speechToTextContent(): void;
     activateSpeechToText(ctrl: any, evt: any, item: any): void;
     conditionCheckError(narrativeElement: any, ctrl: any, evt: any, item: any, err: any): void;
@@ -188,7 +170,6 @@ export declare class DynamicPageCleanupComponent implements OnInit, OnDestroy, A
     processResponseData(file: any): void;
     processOCRResponse(result: any): void;
     prepareFormKeyLabel(json: any): void;
-    financeCustomEventsFunctionality(event: any): void;
     customEvent(event: any): void;
     condionCheckErrorAlert(error: any): void;
     getUpload(obj: any): void;
