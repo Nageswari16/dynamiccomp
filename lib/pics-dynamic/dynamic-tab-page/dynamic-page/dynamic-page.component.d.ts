@@ -142,7 +142,6 @@ export declare class DynamicPageComponent implements OnInit, OnDestroy, AfterVie
     ngOnInit(): void;
     ngAfterViewInit(): void;
     routerPageData(data: any): void;
-    getPageTabs(): void;
     getRouterConfig(isCompositePageRefresh?: boolean): void;
     getSource(): void;
     private getTemplate;
