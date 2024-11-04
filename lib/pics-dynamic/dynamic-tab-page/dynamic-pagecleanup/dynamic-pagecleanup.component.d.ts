@@ -21,13 +21,19 @@ import { Store } from '@ngrx/store';
 import { ComponentState } from '../../@shared/master-view-state/master-view.state';
 import { Observable, Subscription } from 'rxjs';
 import { AppState } from '../../@core/core.state';
+import { FormSubmissionService } from '../../@core/service/formsubmit.service';
+import { TemplateService } from '../../@core/service/Template.service';
+import { routeParamService } from '../../@core/service/routeparam.service';
 import * as i0 from "@angular/core";
 export declare class DynamicPageCleanupComponent implements OnInit, OnDestroy, AfterViewInit {
     router: Router;
     private route;
     private _formIO;
+    private templateService;
+    private routeparamService;
     private store;
     private _storeservice;
+    private formSubmissionService;
     private submitFailed;
     formId: any;
     tabId: any;
@@ -120,7 +126,7 @@ export declare class DynamicPageCleanupComponent implements OnInit, OnDestroy, A
     httpService: any;
     appService: any;
     fallbackIdFromRoute: any;
-    constructor(injector: Injector, router: Router, route: ActivatedRoute, _formIO: FormioService, store: Store<AppState>, data: any, _storeservice: PlatformDataStoreService);
+    constructor(injector: Injector, router: Router, route: ActivatedRoute, _formIO: FormioService, templateService: TemplateService, routeparamService: routeParamService, store: Store<AppState>, data: any, _storeservice: PlatformDataStoreService, formSubmissionService: FormSubmissionService);
     conditionCheckData(data: any): void;
     ngOnInit(): void;
     ngAfterViewInit(): void;
@@ -143,6 +149,7 @@ export declare class DynamicPageCleanupComponent implements OnInit, OnDestroy, A
     onClickConfirmation(userAction: any, actionKey: any): void;
     closeValidationPopup(): void;
     validateForm(): void;
+    masterCompositeViewRoute(data: any): void;
     onSubmit(submission: any): void;
     submiteWithoutId(requestData: any): void;
     addAttachment(info: any): void;
@@ -176,6 +183,6 @@ export declare class DynamicPageCleanupComponent implements OnInit, OnDestroy, A
     verifiData(ocrDocumentDetails: any): void;
     conditionCheckVerify(element: any, ocrDocumentDetails: any, respose: any, jsonForm: any): void;
     getEmittedData(data: any): void;
-    static ɵfac: i0.ɵɵFactoryDeclaration<DynamicPageCleanupComponent, [null, null, null, null, null, { optional: true; }, null]>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<DynamicPageCleanupComponent, [null, null, null, null, null, null, null, { optional: true; }, null, null]>;
     static ɵcmp: i0.ɵɵComponentDeclaration<DynamicPageCleanupComponent, "app-dynamic-pagecleanup", never, { "editId": { "alias": "editId"; "required": false; }; "pageId": { "alias": "pageId"; "required": false; }; "sourceid": { "alias": "sourceid"; "required": false; }; "externalParameters": { "alias": "externalParameters"; "required": false; }; "isReadOnly": { "alias": "isReadOnly"; "required": false; }; "componentId": { "alias": "componentId"; "required": false; }; }, { "afterSubmit": "afterSubmit"; "submissionDone": "submissionDone"; }, never, never, false, never>;
 }
