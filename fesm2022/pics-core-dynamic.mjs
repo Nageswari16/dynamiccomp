@@ -1,4 +1,4 @@
-export { n as CardiDynamicModule, m as DynamicComponent, D as DynamicPageComponent, h as DynamicSearchComponent, g as DynamicSearchModule, l as DynamicService, j as DynamicTabPageService, k as DynamicsearchService, i as DynmicTabPageModule, F as FormPageComponent } from './pics-core-dynamic-pics-core-dynamic-516c952b.mjs';
+export { n as CardiDynamicModule, m as DynamicComponent, D as DynamicPageComponent, h as DynamicSearchComponent, g as DynamicSearchModule, l as DynamicService, j as DynamicTabPageService, k as DynamicsearchService, i as DynmicTabPageModule, F as FormPageComponent } from './pics-core-dynamic-pics-core-dynamic-ba45bc9a.mjs';
 import '@angular/core';
 import 'rxjs';
 import '@angular/router';
