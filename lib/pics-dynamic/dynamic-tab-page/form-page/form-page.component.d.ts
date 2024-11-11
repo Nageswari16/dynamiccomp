@@ -21,6 +21,7 @@ import { Store } from '@ngrx/store';
 import { ComponentState } from '../../@shared/master-view-state/master-view.state';
 import { Observable, Subscription } from 'rxjs';
 import { AppState } from '../../@core/core.state';
+import { VideoSpeechContentService } from './video-speech-content.service';
 import * as i0 from "@angular/core";
 export declare class FormPageComponent implements OnInit, OnDestroy, AfterViewInit {
     router: Router;
@@ -78,6 +79,7 @@ export declare class FormPageComponent implements OnInit, OnDestroy, AfterViewIn
     location: Location;
     dataStore: DataStoreService;
     speechRecognitionService: SpeechRecognitionService;
+    videoSpeechContentService: VideoSpeechContentService;
     uploadService: NgxfUploaderService;
     ocr: OCRService;
     appointmentList: Promise<boolean> | undefined;
@@ -170,21 +172,12 @@ export declare class FormPageComponent implements OnInit, OnDestroy, AfterViewIn
     closePopup(): void;
     goBack(): void;
     openBottomSheet(): void;
-    modifyVideoContent(): void;
     customClickEvents(_data: any, event: any): void;
     redirect(): void;
     customEventsButton(event: any): void;
     downloadReport(data: any): void;
     downloadFile(s3BucketUrlName: any): void;
     customEvents(evt: any): void;
-    speechToTextContent(): void;
-    activateSpeechToText(ctrl: any, evt: any, item: any): void;
-    conditionCheckError(narrativeElement: any, ctrl: any, evt: any, item: any, err: any): void;
-    errorExecution(narrativeElement: any, ctrl: any, evt: any, item: any, err: any): void;
-    micNotAvailableAlert(): string;
-    micUnauthorisedAlert(): string;
-    noSpeechAlert(): string;
-    deActivateSpeechRecognition(ctrl: any): void;
     ngOnDestroy(): void;
     uploadFile(file: File | FileError): void;
     processResponseData(file: any): void;
