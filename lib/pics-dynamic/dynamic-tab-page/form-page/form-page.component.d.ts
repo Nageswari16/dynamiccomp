@@ -22,7 +22,7 @@ import { ComponentState } from '../../@shared/master-view-state/master-view.stat
 import { Observable, Subscription } from 'rxjs';
 import { AppState } from '../../@core/core.state';
 import { VideoSpeechContentService } from './video-speech-content.service';
-import { ocrResponseService } from './ocr-response.service';
+import { OcrResponseService } from './ocr-response.service';
 import * as i0 from "@angular/core";
 export declare class FormPageComponent implements OnInit, OnDestroy, AfterViewInit {
     router: Router;
@@ -81,7 +81,7 @@ export declare class FormPageComponent implements OnInit, OnDestroy, AfterViewIn
     dataStore: DataStoreService;
     speechRecognitionService: SpeechRecognitionService;
     videoSpeechContentService: VideoSpeechContentService;
-    ocrResponseService: ocrResponseService;
+    ocrResponseService: OcrResponseService;
     uploadService: NgxfUploaderService;
     ocr: OCRService;
     appointmentList: Promise<boolean> | undefined;
