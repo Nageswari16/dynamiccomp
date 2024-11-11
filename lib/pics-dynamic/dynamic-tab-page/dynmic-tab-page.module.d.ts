@@ -1,6 +1,6 @@
 import { Injector } from '@angular/core';
 import * as i0 from "@angular/core";
-import * as i1 from "./dynamic-pagecleanup/dynamic-pagecleanup.component";
+import * as i1 from "./form-page/form-page.component";
 import * as i2 from "./dynamic-page/dynamic-page.component";
 import * as i3 from "./dynamic-tab/dynamic-tab.component";
 import * as i4 from "../@shared/page-builder-view/page-builder-view.component";
@@ -25,6 +25,6 @@ import * as i22 from "ng-dynamic-component";
 export declare class DynmicTabPageModule {
     constructor(injector: Injector);
     static ɵfac: i0.ɵɵFactoryDeclaration<DynmicTabPageModule, never>;
-    static ɵmod: i0.ɵɵNgModuleDeclaration<DynmicTabPageModule, [typeof i1.DynamicPageCleanupComponent, typeof i2.DynamicPageComponent, typeof i3.DynamicTabComponent, typeof i4.PageBuilderViewComponent, typeof i5.PopupWrapperComponent, typeof i6.RatingWrapperComponent, typeof i7.FileUploadWrapperComponent, typeof i8.GlobalSearchWrapperComponent, typeof i9.FileUploadBasicComponent, typeof i10.DateRangeWrapperComponent], [typeof i11.CommonModule, typeof i12.FormioModule, typeof i13.FormsModule, typeof i13.ReactiveFormsModule, typeof i14.DynamicTabPageRoutingModule, typeof i15.DxDataGridModule, typeof i15.DxSelectBoxModule, typeof i15.DxCheckBoxModule, typeof i11.CommonModule, typeof i16.PrimengModule, typeof i17.AlertModule, typeof i18.MaterialUIModule, typeof i19.SharedPipesModule, typeof i13.FormsModule, typeof i13.ReactiveFormsModule, typeof i20.NgxfUploaderModule, typeof i21.NgxMaskModule, typeof i22.DynamicModule], never>;
+    static ɵmod: i0.ɵɵNgModuleDeclaration<DynmicTabPageModule, [typeof i1.FormPageComponent, typeof i2.DynamicPageComponent, typeof i3.DynamicTabComponent, typeof i4.PageBuilderViewComponent, typeof i5.PopupWrapperComponent, typeof i6.RatingWrapperComponent, typeof i7.FileUploadWrapperComponent, typeof i8.GlobalSearchWrapperComponent, typeof i9.FileUploadBasicComponent, typeof i10.DateRangeWrapperComponent], [typeof i11.CommonModule, typeof i12.FormioModule, typeof i13.FormsModule, typeof i13.ReactiveFormsModule, typeof i14.DynamicTabPageRoutingModule, typeof i15.DxDataGridModule, typeof i15.DxSelectBoxModule, typeof i15.DxCheckBoxModule, typeof i11.CommonModule, typeof i16.PrimengModule, typeof i17.AlertModule, typeof i18.MaterialUIModule, typeof i19.SharedPipesModule, typeof i13.FormsModule, typeof i13.ReactiveFormsModule, typeof i20.NgxfUploaderModule, typeof i21.NgxMaskModule, typeof i22.DynamicModule], never>;
     static ɵinj: i0.ɵɵInjectorDeclaration<DynmicTabPageModule>;
 }
