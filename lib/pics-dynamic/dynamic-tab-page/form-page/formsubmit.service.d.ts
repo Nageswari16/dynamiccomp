@@ -1,3 +1,4 @@
+import { Injector } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { LocalService } from '../../@core/service/local.service';
 import { AlertService } from '../../@core/service/alert.service';
@@ -6,7 +7,7 @@ export declare class FormSubmissionService {
     private route;
     private localStorage;
     private alertService;
-    constructor(route: ActivatedRoute, localStorage: LocalService, alertService: AlertService);
+    constructor(route: ActivatedRoute, localStorage: LocalService, alertService: AlertService, injector: Injector);
     getIdFromRoute(editId: string, fallbackId: string): string | null;
     prepareSubmissionData(submission: any): any;
     prepareRequestData(formId: string, data: any): {
