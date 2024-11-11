@@ -9,7 +9,7 @@ export declare class ocrResponseService {
     ocr: OCRService;
     constructor(injector: Injector);
     processResponseData(file: any): void;
-    processOCRResponse(result: any, scannerConfig: any, submittedData: any, FormInputs: any): void;
+    processOCRResponse(result: any, scannerConfig: any, submittedData: any, FormInputs: any): any;
     static ɵfac: i0.ɵɵFactoryDeclaration<ocrResponseService, never>;
     static ɵprov: i0.ɵɵInjectableDeclaration<ocrResponseService>;
 }
